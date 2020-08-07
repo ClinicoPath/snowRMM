@@ -103,7 +103,7 @@ items:
     - name: person
       title: Person Analysis
       type: Group
-      items:          
+      items:
         - name: persons
           title: 'Person Statistics'
           type: Table
@@ -132,12 +132,13 @@ items:
               title: Outfit
               visible: (poutfit)
 
-    - name: wrightmap
+    - name: plot
       title: 'Wright Map'
       type: Image
-      width: 500
-      height: 500
+      width: 600
+      height: 450
       visible: (wrightmap)
-      renderFun: .wrightmapPlot
-      refs: mixRasch 
+      renderFun: .plot
+      requiresData: true
+      refs: mixRasch
 ...
